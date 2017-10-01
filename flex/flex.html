@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        .container{
+            background-color: powderblue;
+            height: 200px;
+            display: flex; /* flex 를 없애보고 해봐라. 부모 클래스에 flex 선언을 무조건 해주는게 기본 */
+            flex-direction: column;
+        }
+
+        .item{
+            background-color: tomato;
+            color: white;
+            border: 1px solid white;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <!-- CSS의 flex는 엘리먼트들의 크기나 위치를 쉽게 잡아주는 도구입니다. flex 를 이용하면 레이아웃을 매우 효과적으로 표현할 수 있다. -->
+
+    <div class="container">
+        <!-- .item{$}*5 -->
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+
+</body>
+</html>
