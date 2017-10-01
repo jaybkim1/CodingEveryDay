@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- 아래 한줄이 반응형 웹 개발 할때 필요 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Media Query (반응형 디자인의 핵심 기술)</title>
+
+<!-- https://opentutorials.org/course/2418/13517 크롬 개발자 도구 사용법 마지막 부분 -->
+
+    <style>
+
+        @media (max-width: 600px) {
+            body{
+                background-color: green;
+            }
+        }
+
+        @media (max-width:500px){
+            body{
+                background-color: red;
+            }
+        }
+
+        @media (min-width:601px){
+            body{
+                background-color: blue;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <ul>
+        <li>~500px : red</li>
+        <li>501 ~ 600px : green</li>
+        <li>601px : blue</li>
+    </ul>
+
+</body>
+</html>
