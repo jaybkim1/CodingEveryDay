@@ -6,8 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Fontello 테스트</title>
 
-    <link rel="stylesheet"
-    href="css/fontello.css">
+    <!-- fontello 를 사용하기 위해 fontello.css 와 연결 -->
+    <link rel="stylesheet" href="css/fontello.css">
+
+    <!-- .gif 와 같이 animation 이미지를 추가하고 싶을때 -->
+    <link rel="stylesheet" href="css/animation.css">
 
     <style>
         body{
@@ -27,15 +30,25 @@
             margin-bottom: 100px;
         }
 
-        #test::before{
-            content: "s";
-            color:red;
-            font-size: 30px;
+        #test{
+            margin-bottom: 100px;
         }
 
-        #test::after{
-            content: "e";
-            font-size: 50px;
+            #test::before{
+                content: "s";
+                color:red;
+                font-size: 30px;
+            }
+
+            #test::after{
+                content: "e";
+                font-size: 50px;
+            }
+
+        #animate-icon{
+            font-size: 70px;
+            display: inline-block;
+            margin-bottom: 100px;
         }
 
     </style>
@@ -58,6 +71,13 @@
     <div id="test">
         A
     </div>
+
+    <div id="animate-icon">
+        <i class="icon-facebook-squared animate-spin"></i>
+        <i class="icon-twitch animate-spin"></i>
+        <i class=" icon-googleplus-rect animate-spin"></i>
+    </div>
+
 
 
 </body>
