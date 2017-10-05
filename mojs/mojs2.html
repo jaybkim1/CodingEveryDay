@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+
+<body>
+  <script src="http://cdn.jsdelivr.net/mojs/latest/mo.min.js"></script>
+  <script>
+      var zigzag = new mojs.Shape({
+        shape:        'zigzag',
+        points:       11,
+        radius:       25,
+        radiusY:      50,
+        left:         '25%',
+        fill:         'none',
+        stroke:       'deeppink',
+        isShowStart:   true,
+      });
+
+     var curve = new mojs.Shape({
+        shape:        'curve',
+        points:       11,
+        radius:       25,
+        radiusY:      50,
+        left:         '50%',
+        fill:         'none',
+        stroke:       'deeppink',
+        isShowStart:   true,
+      });
+
+      var cross = new mojs.Shape({
+        shape:        'cross',
+        points:       11,
+        radius:       25,
+        radiusX:      50,
+        left:         '75%',
+        fill:         'none',
+        stroke:       'deeppink',
+        isShowStart:   true,
+        y:            -25,
+      });
+  </script>
+</body>
+
+</html>
