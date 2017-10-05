@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fontello 테스트</title>
+
+    <link rel="stylesheet"
+    href="css/fontello.css">
+
+    <style>
+        body{
+            margin: auto;
+            padding: 20px;
+        }
+
+        #codes{
+            font-family: "fontello"; /* show-codes로 할 경우 font-family를 명시해줘야 한다 */
+            font-size: 100px; /* 아이콘 크기 */
+            margin-bottom: 100px;
+        }
+
+        #icon-name{
+            font-size: 70px;
+            display: inline-block;
+            margin-bottom: 100px;
+        }
+
+        #test::before{
+            content: "s";
+            color:red;
+            font-size: 30px;
+        }
+
+        #test::after{
+            content: "e";
+            font-size: 50px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div id = "codes">
+        &#xf313
+        &#xf30e
+        &#xf099
+    </div>
+
+    <div id = "icon-name">
+        <i class="icon-facebook-squared"></i>
+        <i class="icon-twitch"></i>
+        <i class=" icon-googleplus-rect"></i>
+    </div>
+
+    <div id="test">
+        A
+    </div>
+
+
+</body>
+</html>

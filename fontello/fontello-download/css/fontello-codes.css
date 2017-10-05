@@ -1,0 +1,12 @@
+
+.icon-location:before { content: '\e800'; } /* '' */
+.icon-videocam:before { content: '\e801'; } /* '' */
+.icon-twitter:before { content: '\f099'; } /* '' */
+.icon-thumbs-up-alt:before { content: '\f164'; } /* '' */
+.icon-thumbs-down-alt:before { content: '\f165'; } /* '' */
+.icon-female:before { content: '\f182'; } /* '' */
+.icon-male:before { content: '\f183'; } /* '' */
+.icon-twitch:before { content: '\f1e8'; } /* '' */
+.icon-googleplus-rect:before { content: '\f309'; } /* '' */
+.icon-facebook-squared:before { content: '\f30e'; } /* '' */
+.icon-youtube:before { content: '\f313'; } /* '' */
