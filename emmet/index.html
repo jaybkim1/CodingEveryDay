@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Emmet 사용법 및 예제</title>
+</head>
+<body>
+
+    <!-- Emmet 사용법 정리 -->
+    <!-- Tab 키를 이용해서 사용한다  -->
+
+    <!-- > 사용법 -->
+    header>hgroup>h2+h4
+
+    <header>
+        <hgroup>
+            <h2></h2>
+            <h4></h4>
+        </hgroup>
+    </header>
+
+    <!-- id는 #, class는 . -->
+    header.super-awesome>hgroup#whatever>h2.hello+h4.bye
+
+    <header class="super-awesome">
+        <hgroup id="whatever">
+            <h2 class="hello"></h2>
+            <h4 class="bye"></h4>
+        </hgroup>
+    </header>
+
+    <!-- 안에 컨텐츠를 넣고 싶을때 bracket { } 사용 -->
+    header.super-awesome>group#whatever>h2.hello{Hello World!}+h4.bye{Bye!}
+
+    <header class="super-awesome">
+        <group id="whatever">
+            <h2 class="hello">Hello World!</h2>
+            <h4 class="bye">Bye!</h4>
+        </group>
+    </header>
+
+    <!-- () 괄호, *, $ 사용법 -->
+    section.photo>(header>h1{Photo Title})+(.comments>ul>li.comment{Person $}*5)
+
+    <section class="photo">
+        <header>
+            <h1>Photo Title</h1>
+        </header>
+        <div class="comments">
+            <ul>
+                <li class="comment">Person 1</li>
+                <li class="comment">Person 2</li>
+                <li class="comment">Person 3</li>
+                <li class="comment">Person 4</li>
+                <li class="comment">Person 5</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- a, input 사용법 -->
+    a:link
+    <a href="http://"></a>
+
+    a:link[target="_blank"]
+    <a href="http://" target="_blank"></a>
+
+    a:mail
+    <a href="mailto:"></a>
+
+    input:text
+    <input type="text" name="" id="">
+
+    input:text[placeholder="Whatever"]
+    <input type="text" name="" id="" placeholder="Whatever">
+
+    input:password
+    <input type="password" name="" id="">
+
+
+
+</body>
+</html>
